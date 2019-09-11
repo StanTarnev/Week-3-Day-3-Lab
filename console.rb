@@ -11,6 +11,9 @@ artist1 = Artist.new({
 
 artist1.save()
 
+artist1.name = "Mimi"
+artist1.update()
+
 album1 = Album.new({
   'artist_id' => artist1.id,
   'title' => 'Forever',
@@ -32,6 +35,9 @@ album3 = Album.new({
 album1.save()
 album2.save()
 album3.save()
+
+album2.genre = "Thrash Metal"
+album2.update()
 
 artists = Artist.all()
 albums = Album.all()
