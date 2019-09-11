@@ -39,8 +39,13 @@ album3.save()
 album2.genre = "Thrash Metal"
 album2.update()
 
+album3.delete()
+
 artists = Artist.all()
 albums = Album.all()
+
+# find_artist = Artist.find(1)
+find_album = Album.find(2)
 
 binding.pry
 nil
